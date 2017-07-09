@@ -12,3 +12,4 @@ var mySelf = {
 };
 mySelf.bankAccount.deposit(3000);
 console.log(mySelf);
+//# sourceMappingURL=exercise-types.js.map

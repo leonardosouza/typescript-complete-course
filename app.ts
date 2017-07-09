@@ -81,7 +81,7 @@ let userData: { name: string, age: number } = {
 // complex object
 let complex1: { data: number[], output: (all: boolean) => number[] } = {
   data: [100, 3.9, 10],
-  output: function(all: boolean): number[] {
+  output: function(): number[] {
     return this.data;
   }
 }
@@ -91,10 +91,12 @@ type Complex = { data: number[], output: (all: boolean) => number[] }
 
 let complex2: Complex = {
   data: [100, 3.9, 10],
-  output: function (all: boolean): number[] {
+  output: function () {
     return this.data;
   }
 }
+
+console.log(complex2.output(true));
 
 // union types
 let myRealRealAge: number | string = 27;
