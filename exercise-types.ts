@@ -1,19 +1,19 @@
-type BankAccount = { money: number, deposit: (v: number) => void }
+interface IBankAccount { money: number; deposit: (v: number) => void; }
 
-let bankAccount: BankAccount = {
+let bankAccount: IBankAccount = {
   money: 2000,
   deposit(value) {
     this.money += value;
-  }
-}
+  },
+};
 
-type MySelf = { name: string, bankAccount: BankAccount, hobbies: string[] }
+interface IMySelf { name: string; bankAccount: IBankAccount; hobbies: string[]; }
 
-let mySelf: MySelf = {
-  name: "Leo",
+let mySelf: IMySelf = {
   bankAccount,
-  hobbies: ["Sports", "Cooking"]
-}
+  hobbies: ["Sports", "Cooking"],
+  name: "Leo",
+};
 
 mySelf.bankAccount.deposit(3000);
 

@@ -1,11 +1,11 @@
 "use strict";
-var myName = 'Leo';
+var myName = "Leo";
 var myAge = 34;
 var hasHobbies = true;
 var myRealAge;
 myRealAge = 35;
-var hobbies = ['Cooking', 'Sports'];
-var address = ['Cuiabá', 998];
+var hobbies = ["Cooking", "Sports"];
+var address = ["Cuiabá", 998];
 var Color;
 (function (Color) {
     Color[Color["Red"] = 0] = "Red";
@@ -33,30 +33,30 @@ var myMultiply;
 myMultiply = multiply;
 console.log(myMultiply(5, 5));
 var userData = {
-    name: 'Leo',
-    age: 34
+    age: 34,
+    name: "Leo",
 };
 var complex1 = {
     data: [100, 3.9, 10],
     output: function () {
         return this.data;
-    }
+    },
 };
 var complex2 = {
     data: [100, 3.9, 10],
     output: function () {
         return this.data;
-    }
+    },
 };
 console.log(complex2.output(true));
 var myRealRealAge = 27;
 myRealRealAge = "27";
 var finalValue = 30;
-if (typeof finalValue == "number") {
+if (typeof finalValue === "number") {
     console.log("Final value is a number");
 }
 function neverReturns() {
-    throw new Error('An error!');
+    throw new Error("An error!");
 }
 var canBeNull = 12;
 canBeNull = null;

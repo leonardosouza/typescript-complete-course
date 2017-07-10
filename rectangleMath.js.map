@@ -1,1 +1,1 @@
-{"version":3,"file":"rectangleMath.js","sourceRoot":"","sources":["rectangleMath.ts"],"names":[],"mappings":";AAAA,IAAU,MAAM,CAIf;AAJD,WAAU,MAAM;IACd,4BAAmC,KAAa,EAAE,MAAc;QAC9D,MAAM,CAAC,KAAK,GAAG,MAAM,CAAC;IACxB,CAAC;IAFe,yBAAkB,qBAEjC,CAAA;AACH,CAAC,EAJS,MAAM,KAAN,MAAM,QAIf"}
+{"version":3,"file":"rectangleMath.js","sourceRoot":"","sources":["rectangleMath.ts"],"names":[],"mappings":";AACA,IAAU,MAAM,CAIf;AAJD,WAAU,MAAM;IACd,4BAAmC,KAAa,EAAE,MAAc;QAC9D,MAAM,CAAC,KAAK,GAAG,MAAM,CAAC;IACxB,CAAC;IAFe,yBAAkB,qBAEjC,CAAA;AACH,CAAC,EAJS,MAAM,KAAN,MAAM,QAIf"}

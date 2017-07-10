@@ -1,5 +1,5 @@
 {
-  
+
 // Exercise 1 - Maybe use an Arrow Function?
 // var double = function (value) {
 //   return value * 2;
@@ -12,7 +12,7 @@ console.log(double(10));
 //   if (name === undefined) { name = "Max"; }
 //   console.log("Hello, " + name);
 // };
-const greet = (name: string = 'Leo'): void => console.log(`Hello, ${name}`);
+const greet = (name: string = "Leo"): void => console.log(`Hello, ${name}`);
 greet();
 greet("Anna");
 
@@ -30,7 +30,7 @@ newArray.push(...numbers);
 console.log(newArray);
 
 // Exercise 5 - That's a well-constructed array.
-var testResults = [3.89, 2.99, 1.38];
+const testResults = [3.89, 2.99, 1.38];
 // var result1 = testResults[0];
 // var result2 = testResults[1];
 // var result3 = testResults[2];
@@ -38,7 +38,7 @@ const [result1, result2, result3] = testResults;
 console.log(result1, result2, result3);
 
 // Exercise 6 - And a well-constructed object!
-var scientist = { lastName: "Smith", experience: 12 };
+const scientist = { lastName: "Smith", experience: 12 };
 // var lastName = scientist.lastName;
 // var experience = scientist.experience;
 const { lastName, experience } = scientist;

@@ -109,7 +109,7 @@ var OnlyOne = (function () {
     }
     OnlyOne.getInstance = function () {
         if (!OnlyOne.instance) {
-            OnlyOne.instance = new OnlyOne('The Only One');
+            OnlyOne.instance = new OnlyOne("The Only One");
         }
         return OnlyOne.instance;
     };

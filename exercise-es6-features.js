@@ -3,7 +3,7 @@
     var double = function (value) { return value * 2; };
     console.log(double(10));
     var greet_1 = function (name) {
-        if (name === void 0) { name = 'Leo'; }
+        if (name === void 0) { name = "Leo"; }
         return console.log("Hello, " + name);
     };
     greet_1();

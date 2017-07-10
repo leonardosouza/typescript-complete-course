@@ -1,7 +1,7 @@
 // console.log('It works!');
 
 // string
-let myName = 'Leo'; // implicit type
+let myName = "Leo"; // implicit type
 // myName = 34; // reassign error compiling
 
 // number
@@ -18,17 +18,17 @@ myRealAge = 35;
 // myRealAge = '35'; // error compiling here
 
 // array
-let hobbies: string[] = ['Cooking', 'Sports'];
+let hobbies: string[] = ["Cooking", "Sports"];
 // hobbies = [100]; // error compiling
 
 // tupples
-let address: [string, number] = ['Cuiabá', 998];
+let address: [string, number] = ["Cuiabá", 998];
 
 // enum
 enum Color {
   Red,
-  Green = 255, 
-  Blue = 2
+  Green = 255,
+  Blue = 2,
 }
 
 let myColor: Color = Color.Green;
@@ -64,12 +64,12 @@ let myMultiply: (x: number, y: number) => number;
 // myMultiply = sayHello; // error compiling
 // myMultiply(); // error compiling
 myMultiply = multiply;
-console.log( myMultiply(5,5) );
+console.log( myMultiply(5, 5) );
 
 // objects
 let userData: { name: string, age: number } = {
-  name: 'Leo',
-  age: 34
+  age: 34,
+  name: "Leo",
 };
 
 // reassign compiling error
@@ -81,20 +81,20 @@ let userData: { name: string, age: number } = {
 // complex object
 let complex1: { data: number[], output: (all: boolean) => number[] } = {
   data: [100, 3.9, 10],
-  output: function(): number[] {
+  output(): number[] {
     return this.data;
-  }
-}
+  },
+};
 
 // type alias
-type Complex = { data: number[], output: (all: boolean) => number[] }
+interface IComplex { data: number[]; output: (all: boolean) => number[]; }
 
-let complex2: Complex = {
+let complex2: IComplex = {
   data: [100, 3.9, 10],
-  output: function () {
+  output() {
     return this.data;
-  }
-}
+  },
+};
 
 console.log(complex2.output(true));
 
@@ -104,13 +104,13 @@ myRealRealAge = "27";
 
 // check types
 let finalValue = 30;
-if(typeof finalValue == "number") {
+if (typeof finalValue === "number") {
   console.log("Final value is a number");
 }
 
 // never
 function neverReturns(): never {
-  throw new Error('An error!');
+  throw new Error("An error!");
 }
 
 // nullable types

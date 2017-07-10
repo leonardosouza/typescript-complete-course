@@ -1,8 +1,8 @@
 console.log("LET AND CONST");
-let variable = "One value";
-console.log(variable);
-variable = "Another value";
-console.log(variable);
+let myVariable = "One value";
+console.log(myVariable);
+myVariable = "Another value";
+console.log(myVariable);
 
 const maxLevels = 100;
 console.log(maxLevels);
@@ -10,25 +10,26 @@ console.log(maxLevels);
 
 // Block Scope
 function reset() {
-  let variable = null;
-  console.log(variable);
+  // tslint:disable-next-line:no-shadowed-variable
+  const myVariable = null;
+  console.log(myVariable);
 }
 reset();
-console.log(variable);
+console.log(myVariable);
 
 // Arrow Functions
 console.log("ARROW FUNCTIONS");
-const addNumbers = function(number1: number, number2: number): number {
+const addNumbers = (number1: number, number2: number): number => {
   return number1 + number2;
-}
-console.log(addNumbers(1,2));
+};
+console.log(addNumbers(1, 2));
 
 const multiplyNumbers = (number1: number, number2: number) => number1 * number2;
 console.log(multiplyNumbers(10, 3));
 
 const greet = () => {
   console.log("Hello!");
-}
+};
 greet();
 
 const greetFriend = (friend: string) => console.log(friend);
@@ -37,11 +38,11 @@ greetFriend("Manu");
 // Default Parameters
 console.log("DEFAULT PARAMETERS");
 const countdown = (start: number = 100): void => {
-  while(start > 0) {
+  while (start > 0) {
     start--;
   }
-  console.log('Done!', start);
-}
+  console.log("Done!", start);
+};
 
 countdown();
 

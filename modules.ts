@@ -1,4 +1,4 @@
-import { PI, calculateCircumference} from "./math/circle";
+import { calculateCircumference, PI } from "./math/circle";
 import * as Circle from "./math/circle";
 import { calculateRectangle } from "./math/rectangle";
 // import calc from "./math/rectangle"; // export default dependency

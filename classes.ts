@@ -1,13 +1,13 @@
 class Person {
-  name: string;
-  private type: string;
+  public name: string;
   protected age: number;
+  private type: string;
 
   constructor(name: string, public username: string) {
     this.name = name;
   }
 
-  printAge() {
+  public printAge() {
     console.log(this.age);
     this.setType("Also here");
   }
@@ -25,14 +25,15 @@ person.printAge();
 // person.setType("Cool guy");
 
 // Inheritance
+// tslint:disable-next-line:max-classes-per-file
 class Max extends Person {
-  name = "Max";
+  public name = "Max";
 
   constructor(name: string, username: string) {
     super(name, username);
   }
 
-  setAge(age: number) {
+  public setAge(age: number) {
     this.age = age;
   }
 }
@@ -42,17 +43,17 @@ console.log(max);
 max.setAge(30);
 max.printAge();
 
-
 // Getters & Setters
+// tslint:disable-next-line:max-classes-per-file
 class Plant {
   private _species: string = "Default";
 
   get species() {
     return this._species;
   }
-  
+
   set species(value: string) {
-    if(value.length > 3) {
+    if (value.length > 3) {
       this._species = value;
     }
   }
@@ -66,10 +67,11 @@ plant.species = "Green";
 console.log(plant.species);
 
 // Static Properties & Methods
+// tslint:disable-next-line:max-classes-per-file
 class Helpers {
-  static PI: number = 3.14;
+  public static PI: number = 3.14;
 
-  static calcCircumference(diameter: number): number {
+  public static calcCircumference(diameter: number): number {
     return this.PI * diameter;
   }
 }
@@ -78,44 +80,49 @@ console.log(2 * Helpers.PI);
 console.log(Helpers.calcCircumference(8));
 
 // Abstract Class
+// tslint:disable-next-line:max-classes-per-file
 abstract class Project {
-  projectName: string = "Default";
-  budget: number;
+  public projectName: string = "Default";
+  public budget: number;
 
-  abstract changeName(name: string): void;
+  public abstract changeName(name: string): void;
 
-  calcBudget() {
+  public calcBudget() {
     return this.budget * 2;
   }
 }
 
+// tslint:disable-next-line:max-classes-per-file
 class ITProject implements Project {
-  projectName: string;
-  budget: number = 1000;
+  public projectName: string;
+  public budget: number = 1000;
 
-  changeName(name: string): void {
+  public changeName(name: string): void {
     this.projectName = name;
   }
 
-  calcBudget() {
+  public calcBudget() {
     return this.budget * 3;
   }
 }
 
 let newProject = new ITProject();
-console.log(newProject);  
+console.log(newProject);
 newProject.changeName("Super IT Project");
 console.log(newProject);
 
 // private constructors
+// tslint:disable-next-line:max-classes-per-file
 class OnlyOne {
   private static instance: OnlyOne;
 
   private constructor(public name: string) {}
 
-  static getInstance() {
-    if(!OnlyOne.instance) {
-      OnlyOne.instance = new OnlyOne('The Only One');
+  // tslint:disable-next-line:member-access
+  // tslint:disable-next-line:member-ordering
+  public static getInstance() {
+    if (!OnlyOne.instance) {
+      OnlyOne.instance = new OnlyOne("The Only One");
     }
     return OnlyOne.instance;
   }

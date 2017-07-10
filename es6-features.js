@@ -1,17 +1,17 @@
 "use strict";
 console.log("LET AND CONST");
-var variable = "One value";
-console.log(variable);
-variable = "Another value";
-console.log(variable);
+var myVariable = "One value";
+console.log(myVariable);
+myVariable = "Another value";
+console.log(myVariable);
 var maxLevels = 100;
 console.log(maxLevels);
 function reset() {
-    var variable = null;
-    console.log(variable);
+    var myVariable = null;
+    console.log(myVariable);
 }
 reset();
-console.log(variable);
+console.log(myVariable);
 console.log("ARROW FUNCTIONS");
 var addNumbers = function (number1, number2) {
     return number1 + number2;
@@ -31,7 +31,7 @@ var countdown = function (start) {
     while (start > 0) {
         start--;
     }
-    console.log('Done!', start);
+    console.log("Done!", start);
 };
 countdown();
 console.log("REST & SPREAD");
