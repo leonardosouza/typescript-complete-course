@@ -6,12 +6,17 @@
   "scripts": {
     "test": "",
     "start": "lite-server",
-    "watch": "tsc -w"
+    "watch": "tsc -w",
+    "bundle": "tsc --watch --outFile namespace.js circleMath.ts rectangleMath.ts namespace.ts",
+    "out": "tsc -w namespace.ts --outFile namespace.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "lite-server": "^2.3.0"
+  },
+  "dependencies": {
+    "systemjs": "^0.20.14"
   }
 }
