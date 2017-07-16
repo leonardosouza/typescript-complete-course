@@ -13,8 +13,8 @@
     var newArray = [55, 20];
     newArray.push.apply(newArray, numbers_1);
     console.log(newArray);
-    var testResults = [3.89, 2.99, 1.38];
-    var result1 = testResults[0], result2 = testResults[1], result3 = testResults[2];
+    var testResults_1 = [3.89, 2.99, 1.38];
+    var result1 = testResults_1[0], result2 = testResults_1[1], result3 = testResults_1[2];
     console.log(result1, result2, result3);
     var scientist = { lastName: "Smith", experience: 12 };
     var lastName = scientist.lastName, experience = scientist.experience;
