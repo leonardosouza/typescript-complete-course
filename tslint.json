@@ -12,7 +12,8 @@
             "check-format",
             "allow-leading-underscore"
         ],
-        "no-reference": false
+        "no-reference": false,
+        "ban-types": false
     },
     "rulesDirectory": []
 }
