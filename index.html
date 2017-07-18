@@ -7,7 +7,7 @@
   <title>Typescript Course</title>
 </head>
 <body>
-  <h1>Typescript Course!</h1>
+  <h1 id="course">Typescript Course!</h1>
   <!--<script src="app.js"></script>-->
   <!--<script src="exercise-types.js"></script>-->
   <!--<script src="es6-features.js"></script>-->
@@ -19,11 +19,17 @@
    <!-- <script src="generics.js"></script>  -->
    <!-- <script src="generics-exercise.js"></script>  -->
    <!-- <script src="generics-solution.js"></script>  -->
-   <script src="decorators.js"></script> 
-  <!-- <script src="./node_modules/systemjs/dist/system.js"></script>
+   <!-- <script src="decorators.js"></script>  -->
+  <script src="node_modules/systemjs/dist/system.js"></script>  
   <script>
-    SystemJS.config({ baseUrl: '/', packages: { '/': { defaultExtension: 'js' } } });
-    SystemJS.import('modules.js');
-  </script> -->
+    SystemJS.config({ 
+      map: {
+        "jQuery": "node_modules/jquery/dist/jquery.min.js"
+      },
+      baseUrl: "/", 
+      packages: { "/": { defaultExtension: "js" } } 
+    });
+    SystemJS.import("myapp.js");
+  </script>
 </body>
 </html>
