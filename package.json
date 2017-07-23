@@ -9,17 +9,21 @@
     "watch": "tsc -w",
     "bundle": "tsc --watch --outFile namespace.js circleMath.ts rectangleMath.ts namespace.ts",
     "out": "tsc -w namespace.ts --outFile namespace.js",
-    "build": "gulp"
+    "build": "gulp",
+    "webpack": "webpack -d --watch",
+    "webpack:prod": "webpack -p"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@types/lodash": "^4.14.70",
-    "lite-server": "^2.3.0",
-    "typescript": "^2.5.0-dev.20170719",
     "gulp": "^3.9.1",
-    "gulp-typescript": "^3.2.1"
+    "gulp-typescript": "^3.2.1",
+    "lite-server": "^2.3.0",
+    "ts-loader": "^2.3.1",
+    "typescript": "^2.5.0-dev.20170719",
+    "webpack": "^3.3.0"
   },
   "dependencies": {
     "jquery": "^3.2.1",
