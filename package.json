@@ -8,14 +8,18 @@
     "start": "lite-server",
     "watch": "tsc -w",
     "bundle": "tsc --watch --outFile namespace.js circleMath.ts rectangleMath.ts namespace.ts",
-    "out": "tsc -w namespace.ts --outFile namespace.js"
+    "out": "tsc -w namespace.ts --outFile namespace.js",
+    "build": "gulp"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@types/lodash": "^4.14.70",
-    "lite-server": "^2.3.0"
+    "lite-server": "^2.3.0",
+    "typescript": "^2.5.0-dev.20170719",
+    "gulp": "^3.9.1",
+    "gulp-typescript": "^3.2.1"
   },
   "dependencies": {
     "jquery": "^3.2.1",

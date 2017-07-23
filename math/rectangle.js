@@ -4,4 +4,3 @@ function calculateRectangle(width, length) {
     return width * length;
 }
 exports.calculateRectangle = calculateRectangle;
-//# sourceMappingURL=rectangle.js.map
